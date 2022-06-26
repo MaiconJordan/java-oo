@@ -4,6 +4,17 @@ public class Conta {
 	private int agencia;
 	private int numero;
 	private Cliente titular;
+	private static int total;
+	
+	public Conta(int agencia, int numero) {
+		Conta.total++;
+		if(agencia > 0) {
+			this.agencia = agencia;
+		} else {
+			System.out.println("numero de conta invalida"); 
+		}
+		this.numero = numero;
+	}
 
 	public void deposita(double valor) {
 		this.saldo += valor;
@@ -53,4 +64,11 @@ public class Conta {
 		this.titular = titular;
 	}
 
+	public static int getTotal() {
+		return Conta.total;
+	}
+
+	
+
+	
 }
