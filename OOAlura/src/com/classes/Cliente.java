@@ -1,0 +1,10 @@
+package com.classes;
+
+public class Cliente {
+
+	String nome;
+	String CPF;
+	String Profissao;
+	
+	
+}

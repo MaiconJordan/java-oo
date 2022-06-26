@@ -26,6 +26,39 @@ public class ContaPrograma {
 		System.out.println(primeiraConta.saldo);
 		 
 		
+		// relação entre classes
+		
+		System.out.println("------------- RELAÇÃO ENTRE CLASSES --------------");
+		
+		Conta contaMaicon = new Conta();
+		
+		contaMaicon.deposita(2500);
+		
+		contaMaicon.titular = new Cliente();
+		
+		// relacionando um clinete diretamente no atributo titular sem criar o objeto Cliente
+		contaMaicon.titular.nome = "Maicon";		
+		
+		System.out.println(contaMaicon.titular.nome);
+				
+		
+		// Crianta objeto de cliente e conta
+		
+		Conta contaSabrine = new Conta();
+		
+		contaSabrine.deposita(1000);
+		
+		Cliente sabrine = new Cliente();
+		
+		sabrine.nome = "Sabrine";
+		
+		contaSabrine.titular = sabrine;
+		
+		System.out.println(contaSabrine.titular.nome);
+		
+		
+		
+		
 	}
 
 }
