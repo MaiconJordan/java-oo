@@ -1,7 +1,7 @@
 package com.classes;
 
 public class Conta {
-	double saldo;
+	private double saldo;
 	int agencia;
 	int numero;
 	Cliente titular;
