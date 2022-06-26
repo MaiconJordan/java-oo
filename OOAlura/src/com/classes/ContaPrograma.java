@@ -24,7 +24,7 @@ public class ContaPrograma {
 		segundaConta.transfere(500, primeiraConta);
 		
 		System.out.println(primeiraConta.saldo);
-		System.out.println(segundaConta.saldo);
+		 
 		
 	}
 
