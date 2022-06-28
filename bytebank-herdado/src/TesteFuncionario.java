@@ -11,8 +11,9 @@ public class TesteFuncionario {
 		System.out.println(maicon.getBonificacao());
 		
 		
-		Gerente g1 = new Gerente();
 		
+		
+		Gerente g1 = new Gerente();
 		
 		g1.setNome("Kenzo");
 		g1.setCpf("999999-9");
@@ -22,7 +23,7 @@ public class TesteFuncionario {
 		boolean senha = g1.autentica(1234);
 		
 		System.out.println(senha);
-		
+		System.out.println(g1.getBonificacao());
 		
 		
 		
