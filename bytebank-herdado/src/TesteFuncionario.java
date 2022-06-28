@@ -12,7 +12,7 @@ public class TesteFuncionario {
 		
 		
 		
-		
+		System.out.println("----------- EXEMPLOS DE HERANÇA -----------");
 		Gerente g1 = new Gerente();
 		
 		g1.setNome("Kenzo");
@@ -24,6 +24,13 @@ public class TesteFuncionario {
 		
 		System.out.println(senha);
 		System.out.println(g1.getBonificacao());
+		
+		
+		// polimorfismo 
+		
+		System.out.println("----------- EXEMPLOS DE POLIMORFISMO -----------");
+		
+		Funcionario g2 = new Gerente();
 		
 		
 		
