@@ -11,8 +11,9 @@ public class Gerente extends Funcionario {
 		}
 	}
 	
+	// pegando metodo e atributos da super classe (Funcionario) através do get
 	public double getBonificacao() {
-		return super.salario;
+		return super.getBonificacao() + super.getSalario();
 	}
 	
 	public int getSenha() {
