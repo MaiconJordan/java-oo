@@ -1,3 +1,4 @@
+import java.security.AccessControlException;
 
 public class TesteFuncionario {
 
@@ -26,12 +27,15 @@ public class TesteFuncionario {
 		System.out.println(g1.getBonificacao());
 		
 		
-		// polimorfismo 
 		
-		System.out.println("----------- EXEMPLOS DE POLIMORFISMO -----------");
 		
-		Funcionario g2 = new Gerente();
 		
+		
+		
+		
+		
+		
+
 		
 		
 	}
