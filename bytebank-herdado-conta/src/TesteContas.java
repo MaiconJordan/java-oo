@@ -14,6 +14,13 @@ public class TesteContas {
 		cp.deposita(200.0);
 		
 		
+		cc.transfere(10, cp);
+		
+		System.out.println(cc.getSaldo());
+		System.out.println(cp.getSaldo());
+		
+		
+		
 	}
 
 }
