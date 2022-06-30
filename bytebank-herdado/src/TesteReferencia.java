@@ -1,25 +1,22 @@
 
 public class TesteReferencia {
 	
-	public static void main(String[] args) {
-		
-		Funcionario f = new Funcionario();
-		
-		f.setSalario(1000);
-		
-		Gerente g = new Gerente();
-		
-		g.setSalario(5000);
-		
-		Editor e = new Editor();
-		
-		e.setSalario(3000);
-		
-		
-		ContorleBonificacao controle = new ContorleBonificacao();
-		
-		controle.registrar(e);
-		controle.registrar(f);
+	  public static void main(String[] args) {
+	
+    Gerente g1 = new Gerente();
+    g1.setNome("Marcos");
+    g1.setSalario(5000.0);
+    
+
+    Designer d = new Designer();
+    
+
+    ContorleBonificacao controle = new ContorleBonificacao();
+    controle.registrar(g1);
+    controle.registrar(d);
+
+    System.out.println(controle.getSoma());
+
 		
 		
 		

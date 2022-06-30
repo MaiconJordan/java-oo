@@ -5,7 +5,7 @@ public class ContorleBonificacao {
 	
 	public void registrar (Funcionario f) {
 		double boni = f.getBonificacao();
-		this.soma += boni;
+		this.soma = this.soma + boni;
 	}
 	
 	public double getSoma() {
