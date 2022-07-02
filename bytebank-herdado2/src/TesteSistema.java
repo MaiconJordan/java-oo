@@ -12,11 +12,14 @@ public class TesteSistema {
 		Administrador a = new Administrador();
 		
 		a.setSenha(3333);
+		a.setCpf("999222338844");
 		
 		SistemaInterno sys = new SistemaInterno();
 		
 		sys.autentica(g);
 		sys.autentica(a);
+		
+		
 	}
 
 }
