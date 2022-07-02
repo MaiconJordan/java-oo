@@ -8,6 +8,7 @@ public class TesteSistema {
 		Gerente g = new Gerente();
 		
 		g.setSenha(2222);
+		g.setNome("gerente lele");
 		
 		Administrador a = new Administrador();
 		
