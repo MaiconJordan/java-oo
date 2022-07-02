@@ -1,25 +1,23 @@
 
-public class Conta {
-	
-	private double saldo;
+public abstract class Conta {
+
+	protected double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
 	private static int total;
-	
+
 	public Conta(int agencia, int numero) {
 		Conta.total++;
-		if(agencia > 0) {
+		if (agencia > 0) {
 			this.agencia = agencia;
 		} else {
-			System.out.println("numero de conta invalida"); 
+			System.out.println("numero de conta invalida");
 		}
 		this.numero = numero;
 	}
 
-	public void deposita(double valor) {
-		this.saldo += valor;
-	}
+	public abstract void deposita(double valor);
 
 	public boolean saca(double valor) {
 		if (this.saldo >= valor) {
@@ -68,8 +66,5 @@ public class Conta {
 	public static int getTotal() {
 		return Conta.total;
 	}
-
-	
-
 
 }
