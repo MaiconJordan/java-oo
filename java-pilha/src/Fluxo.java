@@ -1,9 +1,13 @@
 public class Fluxo {
 
     public static void main(String[] args) {
-        System.out.println("Ini do main");
-        metodo1();
-        System.out.println("Fim do main");
+    	try {
+    	    metodo1();
+    	} catch(ArithmeticException | NullPointerException ex) {
+    	    String msg = ex.getMessage();
+    	    System.out.println("Exception " + msg);
+    	    ex.printStackTrace();
+    	}
     }
 
     private static void metodo1() {
@@ -14,13 +18,11 @@ public class Fluxo {
 
     private static void metodo2() {
         System.out.println("Ini do metodo2");
-        for(int i = 1; i <= 5; i++) {        	
+        for(int i = 1; i <= 5; i++) {
             System.out.println(i);
-            try {
-            	int a = i / 0;
-            } catch (ArithmeticException ex) {
-            	System.out.println("Erro Aritimetico");
-            }
+            Conta c = null;
+            c.deposita();
+        
             
         }
         System.out.println("Fim do metodo2");
